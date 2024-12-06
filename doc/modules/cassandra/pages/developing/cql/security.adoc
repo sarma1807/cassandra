@@ -660,5 +660,5 @@ which were directly granted to `bob` or one of `bob`'s roles:
 include::cassandra:example$CQL/list_select_perm.cql[]
 ----
 
-Show any permissions granted to `carlos` or any of `carlos`'s roles,
+Show any permissions granted to `carlos` or any roles assigned to `carlos`,
 limited to `SELECT` permissions on any resource.
