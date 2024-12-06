@@ -1,6 +1,7 @@
 = Cassandra Query Language (CQL) v3.4.3
 
-\{toc:maxLevel=3}
+:toc:
+:toclevels: 3
 
 == CQL Syntax
 
