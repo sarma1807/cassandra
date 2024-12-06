@@ -794,7 +794,7 @@ The following are items that can be addressed in future updates but are
 not available in this repository or are not currently implemented.
 
 * The cluster must be configured to use a partitioner that produces
-\`LongToken\`s, e.g. `Murmur3Partitioner`. Other existing partitioners
+``LongToken``s, e.g. `Murmur3Partitioner`. Other existing partitioners
 which don't produce LongToken e.g. `ByteOrderedPartitioner` and
 `RandomPartitioner` will not work with SASI.
 * Not Equals and OR support have been removed in this release while
