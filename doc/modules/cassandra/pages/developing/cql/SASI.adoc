@@ -9,7 +9,7 @@ has superior performance in cases where queries would previously require
 filtering. In achieving this performance, SASI aims to be significantly
 less resource intensive than existing implementations, in memory, disk,
 and CPU usage. In addition, SASI supports prefix and contains queries on
-strings (similar to SQL's \`LIKE = "foo*"\` or \`LIKE = "*foo*"'\`).
+strings (similar to SQL's ` LIKE = "foo*" ` or ` LIKE = "*foo*" `).
 
 The following goes on describe how to get up and running with SASI,
 demonstrates usage with examples, and provides some details on its
