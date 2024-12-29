@@ -430,11 +430,17 @@ public class Config
     public DurationSpec.IntMillisecondsBound dynamic_snitch_reset_interval = new DurationSpec.IntMillisecondsBound("10m");
     public double dynamic_snitch_badness_threshold = 1.0;
 
+    public String node_proximity;
+    public String initial_location_provider;
+    public String addresses_config;
+    public boolean prefer_local_connections = false;
+
     public String failure_detector = "FailureDetector";
 
     public EncryptionOptions.ServerEncryptionOptions server_encryption_options = new EncryptionOptions.ServerEncryptionOptions();
     public EncryptionOptions client_encryption_options = new EncryptionOptions();
-    public EncryptionOptions jmx_encryption_options = new EncryptionOptions();
+
+    public JMXServerOptions jmx_server_options;
 
     public InternodeCompression internode_compression = InternodeCompression.none;
 
@@ -1322,7 +1328,8 @@ public class Config
     private static final Set<String> SENSITIVE_KEYS = new HashSet<String>() {{
         add("client_encryption_options");
         add("server_encryption_options");
-        add("jmx_encryption_options");
+        // jmx_server_options output (JMXServerOptions.toString()) doesn't
+        // include sensitive encryption config so no need to blocklist here
     }};
 
     public static void log(Config config)
